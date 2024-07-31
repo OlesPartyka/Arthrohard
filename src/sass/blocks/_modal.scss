@@ -1,0 +1,57 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+
+  &__content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 8px 20px 50px;
+    border: 1px solid #888;
+    width: 80%;
+    font-size: 31px;
+    font-weight: 450;
+    line-height: 39.74px;
+  }
+
+  &__content-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-bottom {
+    margin-top: 63px;
+  }
+  
+  &__cost {
+    margin-top: 55px;
+    display: inline-block;
+  }
+
+}
+
+.close {
+  width: 16px;
+  height: 40px;
+  color: $main-color-black;
+  float: right;
+  font-size: 31px;
+  font-weight: 450;
+
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+

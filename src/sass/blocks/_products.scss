@@ -1,0 +1,42 @@
+.products {
+  background-color: #F6F6F6;
+  padding: 20px 0;
+
+  @include on-small-desktop {
+    padding: 100px 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    @include on-small-desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      gap: 50px;
+      justify-content: center;
+    }
+
+    @include on-design {
+      grid-template-columns: repeat(4, 280px);
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    background-color: #BEBEBE;
+    font-family: Futura PT;
+    font-size: 31px;
+    font-weight: 450;
+    line-height: 39px;
+    text-align: center;
+    justify-self: center;
+    cursor: pointer;
+  }
+}

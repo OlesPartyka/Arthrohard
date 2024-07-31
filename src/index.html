@@ -1,13 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
-  </head>
-  <body>
-    <h1>Landing Page</h1>
-  </body>
+<html lang="pl" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthrohard</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__logo">
+          <img src="./img/Arthrohard-logo.png" alt="Arthrohard-logo">
+        </a>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#benefits" class="navigation__link">
+                CO nas wyróżnia
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#compound" class="navigation__link">
+                Skład
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#products" class="navigation__link">
+                produkty
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <img src="./img/preparat.png" alt="Arthrohard-promo" class="promo__img">
+          <div class="promo__content">
+            <img 
+              src="./img/Arthrohard-promo.png" 
+              alt="Arthrohard-promo" 
+              class="promo__logo"
+            >
+            <h1 class="promo__title">
+              Lab-V Arthrohard Preparat <br>
+              na wsparcie stawów dla psa i kota
+            </h1>
+            <p class="promo__description">
+              Arthrohard to dobrze przyswajalny suplement diety w formie syropu,
+              stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
+            </p>
+            <a href="#" class="promo__link">
+              Kup teraz
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="benefits__title">
+          Co wyróżnia nasz preparat
+        </h2>
+        <div class="benefits__content">
+          <article class="card">
+            <h3 class="card__title">
+              Innowacyjny dodatek - <br>
+              Czarciego Pazura
+            </h3>
+            <p class="card__description">
+              Zapewnia dodatkowe wsparcie w zwalczaniu stanów bólowych i zapalnych. Skoncentrowane składniki aktywne, opracowane we współpracy
+              z lekarzami weterynarii, przynoszą szybkie
+              i zauważalne efekty, szczególnie korzystne dla zwierząt z poważnymi problemami stawowymi.
+            </p>
+            <img class="card__img" src="./img/1.jpg" alt="1">
+          </article>
+          <article class="card">
+            <h3 class="card__title">
+              Wygoda - <br>
+              dwa sposoby podawania
+            </h3>
+            <ul class="card__desc-list">
+              <li class="card__list-item">
+                Bezpośrednio do pyszczka
+              </li>
+              <li class="card__list-item">
+                Zmieszany z karmą
+              </li>
+            </ul>
+            <img class="card__img" src="./img/2.png" alt="2">
+          </article>
+          <article class="card">
+            <h3 class="card__title">
+              Skuteczność - <br>
+              skoncentrowana dawka
+            </h3>
+            <p class="card__description">
+              Tylko jedna porcja dziennie.
+              To nie tylko wygoda, ale również gwarancja,
+              że Twoje zwierzę otrzymuje wszystko, czego potrzebuje, aby cieszyć się zdrowiem i aktywnością na długo. Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia.
+            </p>
+            <img class="card__img" src="./img/3.jpg" alt="3">
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="compound" id="compound">
+      <div class="container">
+        <h2 class="compound__title">
+          Skład w 5 ml
+        </h2>
+        <p class="compound__text">
+          Co dają poszczególne składniki:
+        </p>
+        <div class="compound__content">
+          <ul class="compound__left">
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                Siarczan glukozaminy
+              </h3>
+              <span>
+                650 mg
+              </span>
+              <p>
+                Glukozamina jest naturalnym składnikiem chrząstki.
+                Dodatek glukozaminy przyczynia się do zwiększenia produkcji glikozaminoglikanów (m.in. siarczanu keratanu, heparanu, kwasu hialuronowego), które pomagają w odbudowie chrząstki, co jest
+                szczególnie korzystne dla zwierząt ze zmianami zwyrodnieniowymi stawów.
+              </p>
+            </li>
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                Siarczan chondroityny
+              </h3>
+              <span>
+                300 mg
+              </span>
+              <p>
+                Chondroityna, podobnie jak glukozamina, jest składnikiem chrząstki. Chondroityna pomaga zwalczać enzymy, które niszczą chrząstkę, a także pomaga chrząstce zatrzymać wodę, co jest ważne dla jej sprężystości i absorpcji wstrząsów.
+              </p>
+            </li>
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                Kwas hialuronowy
+              </h3>
+              <span>
+                50 mg
+              </span>
+              <p>
+                Kwas hialuronowy jest kluczowym składnikiem płynu stawowego, który działa jak smar i amortyzator dla stawów. Suplementacja kwasem hialuronowym może pomóc w utrzymaniu prawidłowej objętości
+                i konsystencji płynu stawowego.
+              </p>
+            </li>
+          </ul>
+          <ul class="compound__right">
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                Czarci pazur
+              </h3>
+              <span>
+                250 mg
+              </span>
+              <p>
+                Czarci pazur jest rośliną, która ma właściwości przeciwzapalne i przeciwbólowe. Może to pomóc zwierzętom, które doświadczają bólu i stanu zapalnego związanego z problemami ze stawami.
+              </p>
+            </li>
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                Witamina C
+              </h3>
+              <span>
+                50 mg
+              </span>
+              <p>
+                Witamina C jest potężnym przeciwutleniaczem,
+                który może pomóc w ochronie stawów poprzez neutralizację wolnych rodników, które mogą uszkadzać chrząstkę. Ponadto, witamina C odgrywa ważną rolę w produkcji kolagenu, kluczowego składnika chrząstki.
+              </p>
+            </li>
+            <li class="compound__item">
+              <div>
+
+              </div>
+              <h3>
+                MSM
+              </h3>
+              <span>
+                250 mg
+              </span>
+              <p>
+                Metylosulfonylometan, czyli MSM, to naturalny związek siarki, który pomaga w utrzymaniu zdrowych stawów poprzez zmniejszenie stanu zapalnego i bólu. MSM może również pomagać
+                w produkcji kolagenu, co przyczynia się do zdrowia chrząstki stawowej.
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="compound__link">
+            Kup teraz
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container">
+        <form class="form products__form">
+          <label class="form__label" for="itemsPerPage">
+            liczba produktów na stronie
+          </label>
+  
+          <select class="form__select" id="itemsPerPage">
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+          </select>
+        </form>
+        
+        
+  
+        <div class="products__content" id="productsContent">
+
+        </div>
+  
+        <a id="loadMore" class="btn">Załaduj więcej</a>
+      </div>
+    </section>
+  
+    <div id="myModal" class="modal">
+      <div class="modal__content">
+        <div class="modal__content-top">
+          <span>ID</span>
+          <span class="close" id="closeModal">&times;</span>
+        </div>
+        <div class="modal__content-bottom">
+          <span>Nazwa:</span>
+          <span id="modalName"></span>
+          <br>
+          <span class="modal__cost">Wartość:</span>
+          <span id="modalValue"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
 </html>

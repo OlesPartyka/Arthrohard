@@ -1,0 +1,142 @@
+.promo {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  position: relative;
+  z-index: 1;
+
+
+  @include on-small-desktop {
+    padding: 31px 0 103px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include on-small-desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @include on-design {
+      margin-left: 161px;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @include on-small-desktop {
+      display: block;
+      width: 423px;
+    }
+
+    @include on-design {
+      width: 673px;
+      height: 867px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    @include on-tablet {
+      align-items: center;
+    }
+
+    @include on-small-desktop {
+      margin-top: 231px;
+      gap: 0;
+      align-items: flex-start;
+    }
+
+    @include on-design {
+      margin-right: 241px;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include on-small-desktop {
+      display: block;
+      width: 530px;
+    }
+
+    @include on-design {
+      width: 730px;
+    }
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: 450;
+    line-height: 21px;
+    background: linear-gradient(90.01deg, #111111 -8.85%, #B1B1B1 116.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    @include on-small-desktop {
+      margin-top: 31px;
+      font-size: 48px;
+      font-weight: 450;
+      line-height: 61px;
+    }
+  }
+
+  &__description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    max-width: 360px;
+
+    @include on-tablet {
+      text-align: center;
+    }
+
+    @include on-small-desktop {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: start;
+      max-width: 540px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    background-color: #30AB4C;
+    color: $main-color-white;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    transition: all 0.5s;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  
+    &:active {
+      filter: brightness(90%);
+      transform: scale(95%);
+    }
+
+    @include on-tablet {
+      width: 360px;
+    }
+
+    @include on-small-desktop {
+      margin-top: 20px;
+      width: 171px;
+    }
+  }
+}

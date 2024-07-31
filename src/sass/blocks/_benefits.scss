@@ -1,0 +1,63 @@
+.benefits {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include on-small-desktop {
+    padding: 50px 0 103px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 30px;
+    background: linear-gradient(90.01deg, #111111 -8.85%, #B1B1B1 116.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      height: 1px;
+      background-color: $main-color-black;
+      content: "";
+      width: 100px;
+    }
+
+    @include on-small-desktop {
+      font-size: 48px;
+      font-weight: 450;
+      line-height: 61px;
+
+      &::after {
+        bottom: -20px;
+        width: 126px;
+      } 
+    }
+  }
+
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include on-small-desktop {
+      margin-top: 135px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    @include on-design {
+      justify-content: space-around;
+    }
+  }
+}

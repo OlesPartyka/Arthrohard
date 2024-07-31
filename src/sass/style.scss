@@ -1,0 +1,53 @@
+@import './base/variables';
+@import './base/mixins';
+@import './blocks/page';
+@import './blocks/header';
+@import './blocks/navigation';
+@import './blocks/promo';
+@import './blocks/benefits';
+@import './blocks/card';
+@import './blocks/compound';
+@import './blocks/products';
+@import './blocks/form';
+@import './blocks/modal';
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+  @include on-design {
+    padding: 0;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #30AB4C;
+  color: $main-color-white;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  transition: all 0.5s;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  &:active {
+    filter: brightness(90%);
+    transform: scale(95%);
+  }
+
+  @include on-tablet {
+    width: 360px;
+  }
+
+  @include on-small-desktop {
+    margin-top: 20px;
+    width: 171px;
+  }
+}

@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__label {
+    border: 1px solid #AD4844;
+    font-size: 11px;
+    font-weight: 450;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url('../../icons/Vector\ 1.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+
+      left: 155%;
+      top: 40%;
+      
+      @include on-small-desktop {
+        left: 132%;
+      }
+    }
+
+    @include on-small-desktop {
+      margin-bottom: 120px;
+      font-size: 20px;
+    }
+  }
+
+  &__select {
+    background-color: #AD4844;
+    border: 1px solid #AD4844;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    color: $main-color-white;
+    width: 127px;
+    height: 46px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+}

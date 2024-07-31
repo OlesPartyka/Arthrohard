@@ -1,0 +1,150 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $main-color-black;
+    content: "";
+    transition: width 0.3s ease-out;
+
+    @include on-small-desktop {
+      bottom: -24px;
+    }
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  @include on-design {
+    max-width: 417px;
+  }
+
+  &__title {
+    color: $main-color-black;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 26px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      height: 1px;
+      background-color: $main-color-black;
+      content: "";
+      width: 100px;
+    }
+
+    @include on-small-desktop {
+      font-size: 29px;
+      font-weight: 450;
+      line-height: 39px;
+      text-align: center;
+
+      &::after {
+        bottom: -20px;
+        width: 126px;
+      } 
+    }
+
+    @include on-design {
+      font-size: 31px;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    @include on-small-desktop {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+
+  &__desc-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include on-small-desktop {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+  }
+
+  
+  @for $index from 1 through 2 {
+    &__list-item:nth-child(#{$index})::before {
+      content: "#{$index}";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: $main-color-white;
+      border-radius: 50%;
+      font-weight: 700;
+
+      @include on-small-desktop {
+        width: 46px;
+        height: 46px;
+      }
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+
+    @include on-small-desktop {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: center;
+      gap: 20px;
+    }
+  }
+ 
+  &__img {
+    margin-top: auto;
+    max-height: 228px;
+    max-width: 280px;
+
+    @include on-design {
+      max-height: 294px;
+      max-width: 360px;
+    }
+  }
+}

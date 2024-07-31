@@ -1,0 +1,50 @@
+.navigation {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+
+    @include on-small-desktop {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $main-color-black;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $main-color-black;
+      content: "";
+      transition: width 0.3s ease-out;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
+
+    @include on-small-desktop {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
